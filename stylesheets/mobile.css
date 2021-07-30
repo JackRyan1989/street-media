@@ -1,3 +1,10 @@
 @media only screen and (min-device-width: 214px) {
 
+    /* HERO SECTION */
+    #hero__section {
+        height: 50vh;
+        width: 100%;
+        background-color: aqua;
+    }
+
   }
