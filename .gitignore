@@ -1,2 +1,3 @@
-timesheet.xlsx
-~$timesheet.xlsx
+*.xlsx
+docs/
+.DS_Store
