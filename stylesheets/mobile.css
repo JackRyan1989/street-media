@@ -1,10 +1,53 @@
 @media only screen and (min-device-width: 214px) {
 
+
+    h1 {
+        font-size: 3.5em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    p, span, a, blockquote {
+        font-size: 1.5rem;
+    }
+
+    /* PAGE WRAPPER */
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .wrapper > * {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+
+    /* NAV BAR*/
+
+    /* TEMPORARY STYLES */
+    section {
+        border: solid 1px red;
+    }
+
     /* HERO SECTION */
     #hero__section {
         height: 50vh;
         width: 100%;
-        background-color: aqua;
+        position: relative;
     }
 
+    .hidden__h1 {
+        display: none;
+    }
+
+    .tagline-container__div {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(0%, -50%);
+    }
+    
   }
