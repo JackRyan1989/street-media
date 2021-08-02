@@ -7,17 +7,35 @@
     h2 {
         font-size: 2.5em;
     }
+
+    h1, h2 {
+        text-decoration: underline;
+        text-decoration-color: #cf6a87;
+        text-decoration-thickness: 0.5rem;
+        margin-bottom: 2%;
+    }
+
     h3 {
         font-size: 2em;
     }
+
+    p {
+        margin: 3% 0;
+    }
+
     p, span, a, blockquote {
         font-size: 1.5rem;
+    }
+
+    [id] {
+        scroll-margin-top: 4ex;
     }
 
     /* PAGE WRAPPER */
     .wrapper {
         grid-template-columns: 100%;
         grid-template-rows: auto;
+        padding: 0 2%;
     }
 
     .wrapper > * {
@@ -27,9 +45,9 @@
 
     /* NAV BAR*/
 
-    /* TEMPORARY STYLES */
     section {
         border: solid 1px red;
+        margin-top: 2.5%;
     }
 
     /* HERO SECTION */
@@ -48,6 +66,42 @@
         top: 50%;
         left: 10%;
         transform: translate(0%, -50%);
+        line-height: 350%;
     }
-    
-  }
+
+    .tagline-container__div p,
+    .tagline-container__span {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    .tagline-container__span {
+        text-decoration-thickness: 2.5ex;
+        text-underline-offset: -3.2ex;
+        text-decoration-skip-ink: none;
+        text-decoration-color: #63cdda;
+        color: #000;
+    }
+
+    .tagline__p {
+        font-size: 2rem;
+        margin: 5% 0;
+    }
+
+    /* SERVICES */
+    .about_services__div ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .about_services__div ul li {
+        padding: 2%;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}
