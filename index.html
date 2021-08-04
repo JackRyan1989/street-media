@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="./stylesheets/mobile.css" />
     <link rel="stylesheet" href="./stylesheets/tablet.css" />
     <link rel="stylesheet" href="./stylesheets/desktop.css" />
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon_io/favicon.ico"/>
+    <script defer src="js/nav_bar_toggle.js"></script>
+    <script defer src="js/nav_bar_shrink.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <!-- NAV BAR -->
-      <nav>
-        <ul>
+      <nav id="navbar" class="nav__compressed">
+        <div class="mobile">
+          <img class="nav_logo__img" src="./assets/icons/nav_bar_icon.png" alt="Street Media">
+          <div></div>
+          <button class="menu_button" data-open="false">Open</button>
+        </div>
+        <ul id="nav__ul" class="compressed">
           <li><div></div><a href="#about__section">About Us</a></li>
           <li><div></div><a href="#services__section">Services</a></li>
           <li><div></div><a href="#portfolio__section">Our Work</a></li>
