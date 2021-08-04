@@ -58,12 +58,12 @@
     }
 
     .nav__compressed {
-        transition: all linear 0.25s;
-        height: 70px;
+        transition: all ease-in-out 0.25s;
+        height: 60px;
     }
 
     .nav__expanded {
-        transition: all linear 0.25s;
+        transition: all ease-in-out 0.25s;
         height: 175px;
     }
 
@@ -83,16 +83,16 @@
     ul.compressed {
         opacity: 0;
         height: 0px;
-        transition: all linear 0.30s;
+        transition: all ease-in-out 0.30s;
     }
     ul.expanded {
         opacity: 1;
         height: max-content;
-        transition: all linear 0.30s;
+        transition: all ease-in-out 0.30s;
     }
     .mobile {
         display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         place-items: center;
     }
@@ -103,10 +103,10 @@
     .menu_button {
         background-color: transparent;
         border: solid 1px #fff;
-        border-radius: 0px;
+        border-radius: 3px;
         color: #fff;
         padding: 3%;
-        width: 60%;
+        width: 50%;
         height: 50%;
     }
 
