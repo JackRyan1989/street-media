@@ -24,7 +24,7 @@ function closeNav() {
   nav.classList.remove("nav__expanded");
   nav.classList.add("nav__compressed");
   btn.setAttribute("data-open", "false");
-  btn.textContent = "Open";
+  btn.textContent = "Menu";
 };
 
 function expando() {
