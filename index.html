@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +14,6 @@
       type="image/jpg"
       href="./assets/favicon_io/favicon.ico"
     />
-    <script defer src="js/nav_bar_toggle.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -136,37 +135,45 @@
           <div class="testmonials_wrapper__div">
             <div class="testimonial__item">
               <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                vehicula ante nisl, ac lobortis dolor viverra id. Nullam luctus
-                urna in consequat interdum. Aliquam risus eros, mollis et
-                pharetra eget, malesuada in tortor. Suspendisse et ante ut nibh
-                congue convallis. Morbi et rhoncus nisi, nec eleifend turpis.
-                Quisque at aliquet leo, id commodo velit. Vestibulum sit amet
-                dui dictum, finibus libero a, imperdiet tellus. Maecenas
-                vehicula lorem ut lectus maximus, ac consequat libero convallis.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                  vehicula ante nisl, ac lobortis dolor viverra id. Nullam
+                  luctus urna in consequat interdum. Aliquam risus eros, mollis
+                  et pharetra eget, malesuada in tortor. Suspendisse et ante ut
+                  nibh congue convallis. Morbi et rhoncus nisi, nec eleifend
+                  turpis. Quisque at aliquet leo, id commodo velit. Vestibulum
+                  sit amet dui dictum, finibus libero a, imperdiet tellus.
+                  Maecenas vehicula lorem ut lectus maximus, ac consequat libero
+                  convallis.
+                </p>
               </blockquote>
               <p class="attribution">- Marco Polo</p>
             </div>
             <div class="testimonial__item">
               <blockquote>
-                <p>Mauris ut porta est. In sed ultrices elit. Fusce dapibus purus
-                ut orci congue, non viverra ante venenatis. Aenean posuere diam
-                eget malesuada sodales. Integer commodo lobortis magna, ac
-                vulputate elit vulputate bibendum. Phasellus eu ante ac quam
-                tempus malesuada at ut dui. In blandit mauris dignissim, congue
-                ipsum id, euismod orci.</p>
+                <p>
+                  Mauris ut porta est. In sed ultrices elit. Fusce dapibus purus
+                  ut orci congue, non viverra ante venenatis. Aenean posuere
+                  diam eget malesuada sodales. Integer commodo lobortis magna,
+                  ac vulputate elit vulputate bibendum. Phasellus eu ante ac
+                  quam tempus malesuada at ut dui. In blandit mauris dignissim,
+                  congue ipsum id, euismod orci.
+                </p>
               </blockquote>
               <p class="attribution">- Henry Fonda</p>
             </div>
             <div class="testimonial__item">
               <blockquote>
-                <p>Vivamus imperdiet massa id enim consectetur, quis commodo lacus
-                viverra. Maecenas erat magna, consectetur a quam ac, imperdiet
-                pulvinar tellus. Fusce at porta felis. Quisque euismod aliquet
-                tincidunt. Suspendisse auctor dignissim sollicitudin. Phasellus
-                vulputate vitae enim eu bibendum. Integer vel finibus ante.
-                Proin vel dolor placerat, cursus elit id, ullamcorper magna.
-                Duis tincidunt consequat orci in lobortis.</p>
+                <p>
+                  Vivamus imperdiet massa id enim consectetur, quis commodo
+                  lacus viverra. Maecenas erat magna, consectetur a quam ac,
+                  imperdiet pulvinar tellus. Fusce at porta felis. Quisque
+                  euismod aliquet tincidunt. Suspendisse auctor dignissim
+                  sollicitudin. Phasellus vulputate vitae enim eu bibendum.
+                  Integer vel finibus ante. Proin vel dolor placerat, cursus
+                  elit id, ullamcorper magna. Duis tincidunt consequat orci in
+                  lobortis.
+                </p>
               </blockquote>
               <p class="attribution">- Janet Dickenson</p>
             </div>
@@ -234,10 +241,16 @@
         <section id="contact__section">
           <h2>Contact Us</h2>
           <ul>
-            <li><p>1067 Old ford Road <br/>
-              Philadelphia, PA</p></li>
+            <li>
+              <p>
+                1067 Old ford Road <br />
+                Philadelphia, PA
+              </p>
+            </li>
             <li><p>215.555.5555</p></li>
-            <li><a href="mailto:sales@streetmedia.com">sales@streetmedia.com</a></li>
+            <li>
+              <a href="mailto:sales@streetmedia.com">sales@streetmedia.com</a>
+            </li>
           </ul>
         </section>
         <!-- FOOTER -->
@@ -246,5 +259,12 @@
         </footer>
       </main>
     </div>
+    <script src="js/nav_bar_toggle.js"></script>
+    <!-- Any polyfill to enable smoothscroll for the JavaScript APIs 
+    Polyfill script taken from: https://jonaskuske.github.io/smoothscroll-anchor-polyfill/
+    -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <!-- This package, to apply the smoothscroll to anchor links -->
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
   </body>
 </html>

@@ -1,6 +1,11 @@
 @media only screen and (min-device-width: 214px) {
   @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nanum+Gothic:wght@400;700;800&display=swap");
 
+    /* CSS custom property for the polyfill */
+  html {
+    --scroll-behavior: smooth;
+  }
+
   h1,
   h2,
   h3,
@@ -310,11 +315,13 @@
   /* Footer */
   #footer {
       border-top: 1px solid black;
+      background-color: ghostwhite;
+      height: 10vh;
   }
 
   .copyright {
       font-size: 1.1em;
-      margin-left: 10%;
+      margin-left: 2.5%;
   }
 
 }

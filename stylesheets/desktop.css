@@ -1,3 +1,92 @@
-@media only screen and (min-device-width: 1200px) {
+@media only screen and (min-device-width: 1024px) {
+  p {
+    margin: 2% 0;
+  }
+
+  section {
+    margin-top: 0;
+  }
+  /* Navbar */
+
+  nav {
+    margin: 0 0;
+  }
+
+  .nav__compressed {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    height: 95px;
+  }
+
+  ul.compressed {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  ul.compressed li a {
+      padding: 0%;
+  }
+
+  a.nav_menu_item {
+    text-align: center;
+  }
+
+  /* HERO Section */
+  .tagline__p {
+    margin: 3% 0;
+  }
+
+  /* Testimonials */
+
+  .testimonial__item {
+      margin: 2.5% 0;
+  }
+
+  /* Clients */
+  .clients_wrapper__div {
+    margin-top: 0%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .logo__item {
+      width: 35%;
+  }
+
+  /* Contact Section */
+
+  #contact_section > ul {
+      margin: 2.5% 0;
+  }
+
+  #contact_section > ul > li {
+      width: 75%;
+  }
+
+  #contact__section > ul li a {
+      font-size: 2rem;
+      position: relative;
+      transition: all ease-in-out 0.25s;
+  }
+
+  #contact__section > ul li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #d6584f;
+    height: 3px;
+    transition: all ease-in-out 0.25s;
+  }
+
+  #contact__section > ul li a:hover::after,
+  #contact__section > ul li a:focus::after {
+    width: 100%;
+    transition: all ease-in-out 0.25s;
+  }
 
 }
