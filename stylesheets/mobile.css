@@ -6,6 +6,19 @@
     --scroll-behavior: smooth;
   }
 
+  /* Font Family */
+
+  @font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ * {
+  font-family: "Gotham", sans-serif !important;
+}
+
   h1,
   h2,
   h3,
