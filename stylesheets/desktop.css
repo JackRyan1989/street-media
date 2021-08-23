@@ -1,4 +1,9 @@
 @media only screen and (min-device-width: 1024px) {
+  
+  [id] {
+    scroll-margin-top: 15ex;
+  }
+
   p {
     margin: 2% 0;
   }
@@ -6,8 +11,8 @@
   section {
     margin-top: 0;
   }
-  /* Navbar */
 
+  /* Navbar */
   nav {
     margin: 0 0;
   }
@@ -62,31 +67,30 @@
   #contact_section > ul > li {
       width: 75%;
   }
-
   #contact__section > ul li a {
-      font-size: 2rem;
-      position: relative;
-      transition: all ease-in-out 0.25s;
-  }
-
-  #contact__section > ul li a::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #d6584f;
-    height: 3px;
+    font-size: 2rem;
+    position: relative;
     transition: all ease-in-out 0.25s;
-  }
+}
 
-  #contact__section > ul li a:hover::after,
-  #contact__section > ul li a:focus::after {
-    width: 100%;
-    transition: all ease-in-out 0.25s;
-  }
+#contact__section > ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #d6584f;
+  height: 3px;
+  transition: all ease-in-out 0.25s;
+}
+
+#contact__section > ul li a:hover::after,
+#contact__section > ul li a:focus::after {
+  width: 100%;
+  transition: all ease-in-out 0.25s;
+}
 
 }

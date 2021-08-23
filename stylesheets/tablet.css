@@ -1,4 +1,6 @@
 @media only screen and (min-device-width: 600px) {
+
+
   h2 {
     font-size: 3.5em;
   }
@@ -12,7 +14,7 @@
 
   /* NAV BAR */
   nav {
-    position: relative;
+    position: fixed;
     height: 5vh;
     margin: 2.5% 0;
   }
@@ -61,10 +63,9 @@
     text-align: right;
     padding: 1%;
   }
-
   ul.compressed li a {
     position: relative;
-    z-index: 1;
+    z-index: 999;
     padding: 3%;
     transition: all ease-in-out 0.25s;
   }
@@ -102,6 +103,7 @@
     transition: all ease-in-out 0.25s;
   }
 
+
   /* HERO Section */
 
   .tagline-container__div p,
@@ -111,9 +113,9 @@
 
   .tagline__p {
     font-size: 2.5rem;
-}
+  }
 
-.about_services__div ul li {
+  .about_services__div ul li {
     font-size: 2rem;
   }
 

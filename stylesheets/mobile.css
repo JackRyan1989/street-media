@@ -1,36 +1,20 @@
 @media only screen and (min-device-width: 214px) {
-  @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nanum+Gothic:wght@400;700;800&display=swap");
-
-    /* CSS custom property for the polyfill */
-  html {
-    --scroll-behavior: smooth;
+  /* Fonts */
+  @font-face {
+    font-family: "GothamBold";
+    src: url("../assets/fonts/gotham/Gotham-Bold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "GothamRegular";
+    src: url("../assets/fonts/gotham/Gotham-Medium.otf") format("opentype");
   }
 
-  /* Font Family */
+  h1, h2, h3, .tagline-container__div > p, .tagline-container__div > span, .nav_menu_item {
+    font-family: "GothamBold", sans-serif !important;
+  }
 
-  @font-face {
-    font-family: 'Gotham';
-    src: url('../assets/fonts/gotham/GothamMedium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
- * {
-  font-family: "Gotham", sans-serif !important;
-}
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span,
-  a,
-  li,
-  blockquote {
-    font-family: "Nanum Gothic", sans-serif;
+  p, li, a, blockquote {
+    font-family: "GothamRegular", sans-serif !important;
   }
 
   h1 {
@@ -233,8 +217,8 @@
     column-gap: 1em !important;
   }
 
-  .image__item:nth-child(n+2) {
-      margin-top: 1em;
+  .image__item:nth-child(n + 2) {
+    margin-top: 1em;
   }
 
   .image__item {
@@ -310,34 +294,33 @@
   /* Contact Section */
 
   #contact__section > ul {
-      margin: 7% 0%;
+    margin: 7% 0%;
   }
 
   #contact__section > ul li {
-      margin: 0px 0px 0px 2%;
-      padding: 2%;
+    margin: 0px 0px 0px 2%;
+    padding: 2%;
   }
 
   #contact__section > ul li a {
-      font-size: 1.5em;
-      text-decoration: none;
+    font-size: 1.5em;
+    text-decoration: none;
   }
 
   #contact__section > ul li:nth-child(odd) {
-     background-color: ghostwhite;
-     border-left: 6px solid lightgrey;
+    background-color: ghostwhite;
+    border-left: 6px solid lightgrey;
   }
 
   /* Footer */
   #footer {
-      border-top: 1px solid black;
-      background-color: ghostwhite;
-      height: 10vh;
+    border-top: 1px solid black;
+    background-color: ghostwhite;
+    height: 10vh;
   }
 
   .copyright {
-      font-size: 1.1em;
-      margin-left: 2.5%;
+    font-size: 1.1em;
+    margin-left: 2.5%;
   }
-
 }
