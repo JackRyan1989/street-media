@@ -13,7 +13,7 @@
     font-family: "GothamBold", sans-serif !important;
   }
 
-  p, li, a, blockquote {
+  p, li, a, blockquote, label, button, input, legend, textarea, button {
     font-family: "GothamRegular", sans-serif !important;
   }
 
@@ -40,14 +40,17 @@
     font-size: 2em;
   }
 
-  p {
+  p, legend, button {
     margin: 3% 0;
   }
 
   p,
   span,
   a,
-  blockquote {
+  blockquote,
+  label,
+  legend,
+  button {
     font-size: 1.5rem;
   }
 
@@ -293,25 +296,40 @@
 
   /* Contact Section */
 
-  #contact__section > ul {
-    margin: 7% 0%;
+  #contact-form {
+    margin-top:5%;
   }
 
-  #contact__section > ul li {
-    margin: 0px 0px 0px 2%;
-    padding: 2%;
+  #contact-form input {
+    margin: 2.5% 0%;
+    border-radius: 3px;
+    height: 2.5rem;
+    width: 75%;
   }
 
-  #contact__section > ul li a {
-    font-size: 1.5em;
-    text-decoration: none;
+  #contact-form textarea {
+    margin: 2.5% 0%;
+    border-radius: 3px;
+    border: solid 2px #000;
+    height: 6rem;
+    width: 75%;
   }
 
-  #contact__section > ul li:nth-child(odd) {
-    background-color: ghostwhite;
-    border-left: 6px solid lightgrey;
+  .button-wrapper button {
+    height: 3rem;
+    border-radius: 3px;
+    border: solid 2px #000;
+    background-color: #fff;
+    transition: all 0.25s;
   }
 
+  .button-wrapper button:hover,
+  .button-wrapper button:focus {
+    background-color: #d6584f;
+    color: #fff;
+    transition: all 0.25s;
+  }
+ 
   /* Footer */
   #footer {
     border-top: 1px solid black;

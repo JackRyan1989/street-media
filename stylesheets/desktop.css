@@ -13,20 +13,44 @@
   }
 
   /* Navbar */
-  nav {
-    margin: 0 0;
-  }
 
   .nav__compressed {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
-    height: 95px;
+    place-items: center;
+    height: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+  }
+
+  div.mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.mobile button {
+    display: none;
   }
 
   ul.compressed {
+    opacity: 1;
+    height: max-content;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
+    margin-right: 2%;
+    gap: 1rem;
   }
 
   ul.compressed li a {
@@ -35,6 +59,53 @@
 
   a.nav_menu_item {
     text-align: center;
+  }
+
+  ul.compressed li {
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1%;
+    width: 107%;
+  }
+  ul.compressed li a {
+    position: relative;
+    z-index: 999;
+    padding: 3%;
+    transition: all ease-in-out 0.25s;
+  }
+
+  ul.compressed li a:hover,
+  ul.compressed li a:focus {
+    color: #fff;
+    transition: all ease-in-out 0.25s;
+  }
+
+  ul.compressed li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: ".";
+    color: transparent;
+    background: #d6584f;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+    transition: all ease-in-out 0.25s;
+  }
+
+  ul.compressed li a:hover:after,
+  ul.compressed li a:focus:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    transition: all ease-in-out 0.25s;
   }
 
   /* HERO Section */
@@ -60,37 +131,14 @@
 
   /* Contact Section */
 
-  #contact_section > ul {
-      margin: 2.5% 0;
+  #contact-form input {
+    height: 4rem;
+    width: 50%;
   }
 
-  #contact_section > ul > li {
-      width: 75%;
+  #contact-form textarea {
+    height: 10rem;
+    width: 50%;
   }
-  #contact__section > ul li a {
-    font-size: 2rem;
-    position: relative;
-    transition: all ease-in-out 0.25s;
-}
-
-#contact__section > ul li a::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #d6584f;
-  height: 3px;
-  transition: all ease-in-out 0.25s;
-}
-
-#contact__section > ul li a:hover::after,
-#contact__section > ul li a:focus::after {
-  width: 100%;
-  transition: all ease-in-out 0.25s;
-}
 
 }

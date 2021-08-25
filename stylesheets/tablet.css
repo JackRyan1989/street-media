@@ -1,6 +1,4 @@
 @media only screen and (min-device-width: 600px) {
-
-
   h2 {
     font-size: 3.5em;
   }
@@ -12,97 +10,27 @@
     font-size: 2rem;
   }
 
+  [id] {
+    scroll-margin-top: 20ex;
+  }
+
   /* NAV BAR */
   nav {
     position: fixed;
     height: 5vh;
-    margin: 2.5% 0;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.5em;
-  }
-
-  div.mobile {
-    display: flex;
-    flex-direction: column;
-  }
-
-  div.mobile button {
-    display: none;
   }
 
   .nav__compressed {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    place-items: center;
-    height: 100px;
-  }
-
-  ul.compressed {
-    opacity: 1;
-    height: max-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-right: 2%;
-    gap: 1rem;
-  }
-
-  ul.compressed li {
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-align: right;
-    padding: 1%;
-  }
-  ul.compressed li a {
-    position: relative;
-    z-index: 999;
-    padding: 3%;
     transition: all ease-in-out 0.25s;
-  }
-
-  ul.compressed li a:hover,
-  ul.compressed li a:focus {
-    color: #fff;
-    transition: all ease-in-out 0.25s;
-  }
-
-  ul.compressed li a:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    height: 120px;
     width: 100%;
-    height: 1px;
-    content: ".";
-    color: transparent;
-    background: #d6584f;
-    visibility: none;
-    opacity: 0;
-    z-index: -1;
-    transition: all ease-in-out 0.25s;
   }
 
-  ul.compressed li a:hover:after,
-  ul.compressed li a:focus:after {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
+  .nav__expanded {
     transition: all ease-in-out 0.25s;
+    width: 100%;
+    height: 275px;
   }
-
 
   /* HERO Section */
 

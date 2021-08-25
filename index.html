@@ -240,18 +240,89 @@
         <!-- CONTACT -->
         <section id="contact__section">
           <h2>Contact Us</h2>
-          <ul>
-            <li>
-              <p>
-                1067 Old ford Road <br />
-                Philadelphia, PA
-              </p>
-            </li>
-            <li><p>215.555.5555</p></li>
-            <li>
-              <a href="mailto:sales@streetmedia.com">sales@streetmedia.com</a>
-            </li>
-          </ul>
+          <form name="contact-form" id="contact-form">
+            <fieldset>
+              <legend>Asterisks indicate required fields.</legend>
+              <label for="bot-field" style="display: none"
+                >Please complete if not human.</label
+              >
+              <input type="hidden" name="bot-field" id="bot-field" aria-hidden="true" />
+              <div>
+                <label for="fullName">Full Name *</label>
+                <div >
+                  <input
+                    id="fullName"
+                    name="fullName"
+                    type="text"
+                    placeholder="First and Last name"
+                    aria-required="true"
+                    required="true"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="company">Company</label>
+                <div >
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    placeholder="Company Name"
+                  />
+                </div>
+              </div>
+              <div class="email">
+                <label for="emailAddress"
+                  >Email Address *</label
+                >
+                <div >
+                  <input
+                    id="emailAddress"
+                    name="emailAddress"
+                    type="email"
+                    placeholder="Email Address"
+                    aria-required="true"
+                    required="true"
+                  />
+                </div>
+              </div>
+              <div class="phone">
+                <label for="phone">Phone Number *</label>
+                <div >
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="Phone Number"
+                    aria-required="true"
+                    required="true"
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <div >
+                  <textarea
+                    rows="5"
+                    id="message"
+                    name="message"
+                    type="text"
+                    placeholder="Why are you contacting us?"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="button-wrapper">
+                <button
+                  form="contact-form"
+                  type="submit"
+                  class="form-button"
+                >
+                  Submit
+                </button>
+              </div>
+            </fieldset>
+            <div id="messageContainer"></div>
+          </form>
         </section>
         <!-- FOOTER -->
         <footer id="footer">
