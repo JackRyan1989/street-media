@@ -13,7 +13,7 @@
     font-family: "GothamBold", sans-serif !important;
   }
 
-  p, li, a, blockquote, label, button, input, legend, textarea, button {
+  p, li, a, blockquote, label, button, input, legend, textarea, button, #message-container {
     font-family: "GothamRegular", sans-serif !important;
   }
 
@@ -50,7 +50,8 @@
   blockquote,
   label,
   legend,
-  button {
+  button,
+  #message-container {
     font-size: 1.5rem;
   }
 
