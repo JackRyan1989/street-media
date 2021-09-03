@@ -17,7 +17,7 @@ if ($post) {
     $company = stripslashes($_POST['company']);
     $email = trim($_POST['emailAddress']);
     $phone = stripslashes($_POST['phone']);
-    $message = stripslashes($_POST['message']);
+    $message = htmlspecialchars($_POST['message']);
     $subject = 'Street Media Inquiry';
 
 

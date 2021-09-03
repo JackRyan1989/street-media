@@ -14,9 +14,21 @@ let failureMessage =
     "Your message has not been sent. Please try again later.";
 //Grab the form
 let contactForm = document.getElementById("contact-form");
-function validateMessage(input) {
+function validatePost(input) {
     const reg = new RegExp(/<([^"]+)>/);
-    return reg.test(input);
+    let arr = [];
+    input.forEach(elem => {
+        if (elem.length > 0) {
+           if (reg.test(elem)) {
+               arr.push(false);
+           } else {
+               arr.push(true);
+           }
+        } else if (elem.length === 0) {
+            arr.push(false);
+        }
+    });
+    return arr.includes(false);
 };
 function errorAndClear() {
     dispDiv.innerText = failureMessage;
@@ -37,7 +49,7 @@ function successAndClear() {
 //Add event listener
 contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    bot.value.length > 0 || validateMessage(message.value) ? errorAndClear() : submitForm();
+    bot.value.length <= 0 && !validatePost([fullname.value, company.value, message.value]) ? submitForm() : errorAndClear();
 });
 
 //Submit function:
