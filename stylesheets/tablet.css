@@ -7,7 +7,7 @@
   span,
   a,
   blockquote {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   [id] {
@@ -32,25 +32,60 @@
     height: 275px;
   }
 
-  /* HERO Section */
+  /* HERO SECTION */
+  #hero__section {
+    background-size: 200%;
+    background-position: top;
+  }
+
+  .tagline-container__div {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -75%);
+  }
 
   .tagline-container__div p,
   .tagline-container__span {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .tagline__p {
     font-size: 2.5rem;
   }
 
+  /* About */
   .about_services__div ul li {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 
-  /* Portfolio */
+  .about_services__div ul li a {
+    padding-left: 1%;
+  }
 
+  .about_services__div ul li:after {
+    height: 8%;
+    }
+
+  /* Portfolio */
   .images__wrapper {
     column-count: 2;
     column-gap: 0;
+  }
+
+  /* Testimonials */
+  .attribution {
+      font-size: 1.25rem;
+  }
+
+  /* Clients */
+  .clients_wrapper__div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    gap: 1em;
   }
 }

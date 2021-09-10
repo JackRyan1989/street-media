@@ -109,6 +109,23 @@
   }
 
   /* HERO Section */
+
+  #hero__section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .tagline-container__div {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(0%, -50%);
+    line-height: 350%;
+    padding: 1%;
+    border-radius: 8px;
+  }
+  
   .tagline__p {
     margin: 3% 0;
   }
@@ -126,7 +143,7 @@
   }
 
   .logo__item {
-      width: 35%;
+      width: 50%;
   }
 
   /* Contact Section */

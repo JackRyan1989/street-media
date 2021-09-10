@@ -52,7 +52,7 @@
   legend,
   button,
   #message-container {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   [id] {
@@ -128,7 +128,7 @@
     border-radius: 3px;
     color: #000;
     padding: 3%;
-    width: 50%;
+    width: 65%;
     height: 50%;
   }
 
@@ -140,11 +140,11 @@
 
   /* HERO SECTION */
   #hero__section {
-    height: 100vh;
+    height: 75vh;
     margin-top: 0px;
     background-image: url("../assets/images/dali-hero.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size: 210%;
+    background-position: top;
   }
 
   .hidden__h1 {
@@ -154,8 +154,8 @@
   .tagline-container__div {
     position: absolute;
     top: 50%;
-    left: 7%;
-    transform: translate(0%, -50%);
+    left: 1%;
+    transform: translate(0%, -112%);
     line-height: 350%;
     padding: 1%;
     border-radius: 8px;
@@ -190,12 +190,12 @@
   .about_services__div ul {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
   .about_services__div ul li {
     padding: 2.5%;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -208,7 +208,7 @@
     content: "";
     position: absolute;
     left: 2.5%;
-    height: 8%;
+    height: 13%;
     width: 2%;
     background-color: #d6584f;
     margin-right: 2%;
@@ -263,7 +263,7 @@
 
   .attribution {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   blockquote p::before {
@@ -278,10 +278,10 @@
   .clients_wrapper__div {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     place-items: center;
-    gap: 1.5em;
+    gap: 3em;
   }
 
   .logo__wrapper {
@@ -292,7 +292,7 @@
   }
 
   .logo__item {
-    width: 75%;
+    width: 50%;
     height: auto;
   }
 
