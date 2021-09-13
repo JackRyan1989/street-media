@@ -16,19 +16,14 @@ let failureMessage =
 let contactForm = document.getElementById("contact-form");
 function validatePost(input) {
     const reg = new RegExp(/<([^"]+)>/);
-    let arr = [];
-    input.forEach(elem => {
-        if (elem.length > 0) {
-           if (reg.test(elem)) {
-               arr.push(false);
-           } else {
-               arr.push(true);
-           }
-        } else if (elem.length === 0) {
-            arr.push(false);
-        }
-    });
-    return arr.includes(false);
+    let out = true;
+    for (let elem of input) {
+        if (reg.test(elem)) {
+            out = false;
+            return;
+        } 
+    }
+    return out;
 };
 function errorAndClear() {
     dispDiv.innerText = failureMessage;
@@ -49,7 +44,7 @@ function successAndClear() {
 //Add event listener
 contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    bot.value.length <= 0 && !validatePost([fullname.value, company.value, message.value]) ? submitForm() : errorAndClear();
+    bot.value.length <= 0 && validatePost([fullname.value, company.value, message.value]) ? submitForm() : errorAndClear();
 });
 
 //Submit function:
