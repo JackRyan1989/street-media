@@ -34,7 +34,7 @@
 
   /* HERO SECTION */
   #hero__section {
-    background-size: 200%;
+    background-size: cover;
     background-position: top;
   }
 
@@ -42,7 +42,7 @@
     position: absolute;
     top: 50%;
     left: 10%;
-    transform: translate(0%, -75%);
+    transform: translate(0%, -40%);
   }
 
   .tagline-container__div p,
@@ -68,24 +68,45 @@
 
   .about_services__div ul li:after {
     height: 8%;
-    }
+  }
+
+  /* Services */
+
+  .icon__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
 
   /* Portfolio */
   .images__wrapper {
-    column-count: 2;
+    column-count: 3;
     column-gap: 0;
   }
 
   /* Testimonials */
   .attribution {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
+  }
+
+  .testimonial__item {
+    padding: 1%;
+    margin: 10% 0px;
+    background-color: ghostwhite;
+    border-left: 6px solid #d6584f;
+    line-height: 1.4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
   /* Clients */
   .clients_wrapper__div {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     place-items: center;
     gap: 1em;
+  }
+
+  .logo__item {
+    width: 65%;
+    height: auto;
   }
 }

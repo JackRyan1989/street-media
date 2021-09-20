@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-device-width: 1200px) {
   
   [id] {
     scroll-margin-top: 15ex;
@@ -112,8 +112,18 @@
 
   #hero__section {
     height: 100vh;
+    background-image: url("../assets/images/dali-hero.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
+  }
+
+  .hero_sub_text {
+    display: block !important;
+    font-size: 2.5rem !important;
+    text-align: left !important;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.3);
+    padding: 1%;
   }
   
   .tagline-container__div {
@@ -124,6 +134,15 @@
     line-height: 350%;
     padding: 1%;
     border-radius: 8px;
+  }
+
+  .tagline-container__div p, .tagline-container__span {
+    font-size: 5rem;
+    text-align: left !important;
+  }
+
+  .tagline-container__div p {
+    margin-bottom: 0px !important;
   }
   
   .tagline__p {
@@ -140,7 +159,10 @@
   .clients_wrapper__div {
     margin-top: 0%;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
   }
+
+
 
   .logo__item {
       width: 50%;
@@ -150,12 +172,12 @@
 
   #contact-form input {
     height: 4rem;
-    width: 50%;
+    width: 60%;
   }
 
   #contact-form textarea {
     height: 10rem;
-    width: 50%;
+    width: 60%;
   }
 
 }
