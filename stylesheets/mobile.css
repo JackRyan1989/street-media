@@ -105,18 +105,9 @@
     text-align: center;
   }
 
-  nav ul:after {
-    content: "";
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-    height: 2%;
-    width: 100%;
-    background-color: #d6584f;
-    margin-right: 2%;
-    opacity: 1;
-  }
-
+    #navbar {
+      border-bottom: solid 5px #d6584f;
+    }
 
   ul.compressed {
     opacity: 0;
@@ -159,8 +150,8 @@
     height: 75vh;
     margin-top: 0px;
     background-image: url("../assets/images/hero_dali2.jpg");
-    background-size: 120%;
-    background-position: top;
+    background-size: 152%;
+    background-position: center;
   }
 
   .hidden__h1 {
