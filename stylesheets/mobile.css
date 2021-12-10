@@ -8,6 +8,10 @@
     font-family: "GothamRegular";
     src: url("../assets/fonts/gotham/Gotham-Medium.otf") format("opentype");
   }
+  /* Variables */
+  :root {
+    --yellow-bg: #ffcc00;
+  }
 
   h1,
   h2,
@@ -126,7 +130,8 @@
   }
 
   #navbar {
-    border-bottom: solid 5px #d6584f;
+    border-bottom: solid 5px #ff9c00;
+    background-color: var(--yellow-bg);
   }
 
   #nav_icon {
@@ -224,6 +229,10 @@
   }
 
   /* SERVICES */
+  #services__section {
+    background-color: var(--yellow-bg);
+  }
+
   #services__section > * {
     color: #000 !important;
   }
@@ -257,8 +266,6 @@
   .icon__container .icon__item {
     text-align: center;
     margin-top: 10%;
-    border-right: solid 5px whitesmoke;
-    border-bottom: solid 5px whitesmoke;
   }
   /* Portfolio */
 
@@ -301,6 +308,10 @@
   }
 
   /* Testimonials */
+  #testimonials__section {
+    background-color: var(--yellow-bg);
+  }
+
   .testimonial__item {
     padding: 2%;
     margin: 10% 0px;
@@ -358,12 +369,16 @@
 
   /* Contact Section */
 
+  #contact__section {
+    background-color: var(--yellow-bg);
+  }
+
   #contact-form {
     margin-top: 5%;
   }
 
   #contact-form label {
-   margin: 0% 13%; 
+    margin: 0% 13%;
   }
 
   #contact-form input {
@@ -402,15 +417,16 @@
 
   /* Footer */
   #footer {
-    border-top: 1px solid black;
-    background-color: whitesmoke;
+    border-top: 1px solid #ff9c00;
+    background-color: black;
     height: 10vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .copyright {
+  .follow {
+    color: #ff9c00;
     font-size: 1.1em;
     margin-left: 2.5%;
   }

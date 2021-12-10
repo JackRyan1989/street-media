@@ -78,7 +78,7 @@
 
   ul.compressed li a:hover,
   ul.compressed li a:focus {
-    color: #fff;
+    color: #000;
     transition: all ease-in-out 0.25s;
   }
 
@@ -94,7 +94,7 @@
     height: 1px;
     content: ".";
     color: transparent;
-    background: #d6584f;
+    background: #ff9c00;
     visibility: none;
     opacity: 0;
     z-index: -1;
