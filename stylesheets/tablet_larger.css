@@ -41,6 +41,29 @@
     font-size: 7rem;
   }
 
+  /*  About  */
+
+  .tagline__p__second { 
+    font-size: 2rem;
+    margin: 5% 0%;
+  }
+
+  .about__img {
+    max-width: 75%;
+  }
+
+  /* Services */
+
+  .icon__item img {
+    height: 75%;
+    width: auto;
+  }
+
+  .icon__container__paragraph {
+    font-size: 2em; 
+  }
+
+
   /* Testimonials */
 
   .testimonial__item {

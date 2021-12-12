@@ -70,11 +70,40 @@
     height: 8%;
   }
 
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+  }
+
+  .about__img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 100%;
+  }
+
   /* Services */
 
   .icon__container {
+    padding: 2.5%;
+    font-size: 1.15rem;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    grid-gap: 1em;
+    place-items: center;
+  }
+
+  .icon__item img {
+    height: 50%;
+    width: auto;
+  }
+  
+  .icon__container__paragraph {
+    font-size: 1.75em; 
   }
 
   /* Portfolio */
@@ -109,4 +138,19 @@
     width: 65%;
     height: auto;
   }
+
+  /*  Footer */
+
+   #footer {
+    height: 6vh;
+    justify-content: flex-end;
+}
+
+.follow {
+  color: #ff9c00;
+  font-size: 1.1em;
+  margin: 3% 1.5%;
+}
+
+
 }
