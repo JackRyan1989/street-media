@@ -311,6 +311,7 @@
   .images__wrapper {
     column-count: 2;
     column-gap: 0.5em !important;
+    transition: all .5s;
   }
 
   .image__item:nth-child(n + 2) {
@@ -445,7 +446,7 @@
 
   .button-wrapper button:hover,
   .button-wrapper button:focus {
-    background-color: #d6584f;
+    background-color: #000;
     color: #fff;
     transition: all 0.25s;
   }
@@ -468,6 +469,6 @@
   }
 
   .sm__link {
-    margin: 2.5% 1.5%;
+    margin: 1% 1.5%;
   }
 }

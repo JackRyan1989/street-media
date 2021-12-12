@@ -181,4 +181,10 @@
     width: 60%;
   }
 
+  /* Footer */
+
+  #footer {
+    height: 8vh;
+  }
+
 }

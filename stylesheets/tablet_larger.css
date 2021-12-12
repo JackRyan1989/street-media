@@ -37,13 +37,14 @@
     margin-bottom: 6% !important;
   }
 
-  .tagline-container__div p, .tagline-container__span {
+  .tagline-container__div p,
+  .tagline-container__span {
     font-size: 7rem;
   }
 
   /*  About  */
 
-  .tagline__p__second { 
+  .tagline__p__second {
     font-size: 2rem;
     margin: 5% 0%;
   }
@@ -59,16 +60,26 @@
     width: auto;
   }
 
-  .icon__container__paragraph {
-    font-size: 2em; 
+  .icon__item p {
+    font-size: 1.5em;
   }
 
+  .icon__container__paragraph {
+    font-size: 2em;
+  }
 
   /* Testimonials */
 
   .testimonial__item {
     margin: 5% 0px;
-}
+  }
 
+  /* Footer */
+  .follow {
+    margin: 2.5% 1.5%;
+  }
 
+  .sm__link {
+    margin: 2% 1.5%;
+  }
 }
