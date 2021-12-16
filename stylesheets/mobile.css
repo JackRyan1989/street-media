@@ -313,7 +313,7 @@
     transition: all 0.5s;
   }
 
-  .image__item:nth-child(n + 2) {
+  .images__wrapper div:nth-child(n + 2) {
     margin-top: 1em;
   }
 
@@ -322,7 +322,6 @@
     break-inside: avoid;
     overflow: hidden;
   }
-
   .image__item img {
     max-width: 100%;
     height: auto;
