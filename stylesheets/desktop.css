@@ -1,5 +1,4 @@
 @media only screen and (min-device-width: 1200px) {
-  
   [id] {
     scroll-margin-top: 15ex;
   }
@@ -55,7 +54,7 @@
   }
 
   ul.compressed li a {
-      padding: 0%;
+    padding: 0%;
   }
 
   a.nav_menu_item {
@@ -123,10 +122,10 @@
     font-size: 2.5rem !important;
     text-align: left !important;
     border-radius: 8px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 1%;
   }
-  
+
   .tagline-container__div {
     position: absolute;
     top: 50%;
@@ -137,7 +136,8 @@
     border-radius: 8px;
   }
 
-  .tagline-container__div p, .tagline-container__span {
+  .tagline-container__div p,
+  .tagline-container__span {
     font-size: 5rem;
     text-align: left !important;
   }
@@ -145,7 +145,7 @@
   .tagline-container__div p {
     margin-bottom: 0px !important;
   }
-  
+
   .tagline__p {
     margin: 3% 0;
   }
@@ -153,7 +153,8 @@
   /* Testimonials */
 
   .testimonial__item {
-      margin: 2.5% 0;
+    height: 40vh;
+    margin: 2.5% 0;
   }
 
   /* Clients */
@@ -163,10 +164,8 @@
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
   }
 
-
-
   .logo__item {
-      width: 50%;
+    width: 50%;
   }
 
   /* Contact Section */
@@ -186,5 +185,4 @@
   #footer {
     height: 8vh;
   }
-
 }

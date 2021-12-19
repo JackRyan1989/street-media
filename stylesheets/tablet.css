@@ -88,7 +88,6 @@
   /* Services */
 
   .icon__container {
-    padding: 2.5%;
     font-size: 1.15rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -117,12 +116,28 @@
   }
 
   .testimonial__item {
+    height: 25vh;
     padding: 1%;
     margin: 10% 0px;
     background-color: ghostwhite;
     border-left: 6px solid #d6584f;
     line-height: 1.4;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .testimonials__prevnext button {
+    width: 7rem;
+  }
+
+  .bullets {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .bullets button {
+    margin: 0% 1%;
+    width: 2rem;
   }
 
   /* Clients */

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
@@ -34,29 +35,29 @@
         <ul id="nav__ul" class="compressed">
           <li>
             <div></div>
-            <a class="nav_menu_item" href="#about__section">About Us</a>
+            <a class="nav_menu_item" id="about__nav" href="#about__section">About Us</a>
           </li>
           <li>
             <div></div>
-            <a class="nav_menu_item" href="#services__section">Services</a>
+            <a class="nav_menu_item" id="services__nav" href="#services__section">Services</a>
           </li>
           <li>
             <div></div>
-            <a class="nav_menu_item" href="#portfolio__section">Our Work</a>
+            <a class="nav_menu_item" id="portfolio__nav" href="#portfolio__section">Our Work</a>
           </li>
           <li>
             <div></div>
-            <a class="nav_menu_item" href="#testimonials__section"
+            <a class="nav_menu_item" id="testimonials__nav" href="#testimonials__section"
               >Testimonials</a
             >
           </li>
           <li>
             <div></div>
-            <a class="nav_menu_item" href="#clients__section">Clients</a>
+            <a class="nav_menu_item" id="clients__nav" href="#clients__section">Clients</a>
           </li>
           <li>
             <div></div>
-            <a class="nav_menu_item" href="#contact__section">Contact</a>
+            <a class="nav_menu_item" id="contact__nav" href="#contact__section">Contact</a>
           </li>
         </ul>
       </nav>
@@ -241,8 +242,8 @@
         <!-- TESTIMONIALS -->
         <section id="testimonials__section">
           <h2 class="testimonials__h2">Testimonials</h2>
-          <div id="s1" class="testmonials_wrapper__div">
-            <div class="testimonial__item">
+          <div class="testmonials_wrapper__div">
+            <div id="s1" class="testimonial__item show">
               <blockquote>
                 <p>
                   Like everything you have done for us, these came out
@@ -256,7 +257,8 @@
                 Drexel University
               </p>
             </div>
-            <div id="s2" class="testimonial__item">
+            </div>
+            <div id="s2" class="testimonial__item hide">
               <blockquote>
                 <p>
                   You are amazing! Thank you so much for your speedy work, I’m
@@ -269,7 +271,7 @@
                 University of Pennsylvanian Museum
               </p>
             </div>
-            <div id="s3" class="testimonial__item">
+            <div id="s3" class="testimonial__item hide">
               <blockquote>
                 <p>
                   Thanks for all your help with these sudden projects lately.
@@ -280,17 +282,16 @@
                 - Diana <br />Independence Visitor Center Corporation
               </p>
             </div>
-          </div>
           <div class="testimonials__prevnext">
-            <div><a href="#s3">Prev</a><a href="#s2">Next</a></div>
-            <div><a href="#s1">Prev</a><a href="#s3">Next</a></div>
-            <div><a href="#s2">Prev</a><a href="#s1">Next</a></div>
+            <button aria-label="Previous client statement" id="testimonials__prevButton">Prev</button>
+            <div class="bullets">
+              <button id="testimonials__pageOne" class="indicated" aria-current="true">1</button>
+              <button id="testimonials__pageTwo">2</button>
+              <button id="testimonials__pageThree">3</button>
+            </div>
+            <button aria-label="Next client statement" id="testimonials__nextButton">Next</button>
           </div>
-          <div class="bullets">
-            <a href="#s1">1</a>
-            <a href="#s2">2</a>
-            <a href="#s3">3</a>
-          </div>
+        </div>
         </section>
         <!-- CLIENTS -->
         <section id="clients__section">
@@ -524,5 +525,6 @@
     <!-- This package, to apply the smoothscroll to anchor links -->
     <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
     <script src="js/parvus.min.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
