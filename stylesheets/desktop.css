@@ -108,6 +108,13 @@
     transition: all ease-in-out 0.25s;
   }
 
+  ul.compressed li a.active:after {
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: 100% !important;
+    transition: all ease-in-out 0.25s !important;
+  }
+
   /* HERO Section */
 
   #hero__section {
