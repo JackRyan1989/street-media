@@ -56,12 +56,6 @@
     text-decoration-skip-ink: none;
   }
 
-  .services__h2,
-  .testimonials__h2,
-  .contact__h2 {
-    text-decoration: none;
-  }
-
   h3 {
     font-size: 2em;
   }
@@ -80,7 +74,7 @@
   legend,
   button,
   #message-container {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   [id] {
@@ -184,7 +178,7 @@
   #hero__section {
     height: 75vh;
     margin-top: 0px;
-    background-image: url("../assets/images/hero_dali2.jpg");
+    background-image: url("../assets/images/hero_dali2_orange.jpg");
     background-size: 152%;
     background-position: center;
   }
@@ -220,7 +214,7 @@
   }
 
   .tagline__p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 5% 0;
   }
 
@@ -281,9 +275,9 @@
   }
 
   .icon__container {
-    font-size: 1.15rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
   }
 
   .icon__container .icon__item {
@@ -293,11 +287,6 @@
 
   .icon__item img {
     width: 35%;
-  }
-
-  .icon__item p {
-    text-transform: uppercase;
-    font-size: 1.15rem;
   }
 
   /* Portfolio */
@@ -373,11 +362,16 @@
   .testimonial__item {
     height: 40vh;
     padding: 2%;
-    margin: 10% 0px;
+    margin: 10% 10px;
     background-color: ghostwhite;
-    border-left: 6px solid #d6584f;
-    line-height: 1.4;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    box-shadow: -10px 10px 0px 0px #ff7600;
+    -webkit-box-shadow: -10px 10px 0px 0px #ff7600;
+    -moz-box-shadow: -10px 10px 0px 0px #ff7600;
+  }
+
+  .testimonial__item-span {
+    text-transform: uppercase;
   }
 
   .testimonial__item blockquote p {
@@ -391,12 +385,20 @@
     font-size: 1rem;
   }
 
-  blockquote p::before {
-    content: "\275D ";
-    color: grey;
+  .testimonial__item-blockquote-quote {
     font-size: 2em;
     position: relative;
     padding: 0px 10px 0px 0px;
+    width: 10%;
+  }
+
+  blockquote {
+    display: flex;
+    flex-direction: row;
+  }
+
+  blockquote div {
+    margin-top: 15px;
   }
 
   /* Clients */
@@ -408,16 +410,16 @@
   .clients_wrapper__div {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     place-items: center;
-    gap: 3em;
+    gap: 2em;
   }
 
   .logo__wrapper {
     display: grid;
     place-items: center;
-    height: 100%;
+    height: auto;
     width: 100%;
   }
 
@@ -507,6 +509,6 @@
   }
 
   .sm__link {
-    margin: 1% 1.5%;
+    margin: 3% 1.5%;
   }
 }
