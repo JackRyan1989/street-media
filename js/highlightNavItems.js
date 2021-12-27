@@ -1,5 +1,5 @@
-var targets = [];
 var anchors = [];
+var targets = [];
 var sectionIds = document.querySelectorAll("section h2");
 var navAnchors = document.querySelectorAll(".nav_menu_item");
 
@@ -40,5 +40,4 @@ function createObserver(input) {
 targets.forEach(function(section){
   createObserver(section)
 });
-
   

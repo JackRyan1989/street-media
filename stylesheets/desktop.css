@@ -1,14 +1,23 @@
 @media only screen and (min-device-width: 1200px) {
   [id] {
-    scroll-margin-top: 15ex;
+    scroll-margin-top: 10ex;
   }
 
   p {
     margin: 2% 0;
+    font-size: 1.5rem;
   }
 
   legend, label {
     font-size: 1.5rem;
+  }
+
+  blockquote {
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 2.5rem;
   }
 
   section {
@@ -18,11 +27,11 @@
   /* Navbar */
 
   .nav__compressed {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
-    place-items: center;
-    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
   }
 
   nav ul {
@@ -35,7 +44,11 @@
   nav ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 1.5em;
+    font-size: 1em;
+  }
+
+  .nav_logo__img {
+    width: 75%;
   }
 
   div.mobile {
@@ -122,7 +135,7 @@
   /* HERO Section */
 
   #hero__section {
-    height: 100vh;
+    height: 95vh;
     background-image: url("../assets/images/dali-hero_oranged.jpg");
     background-size: cover;
     background-position: top;
@@ -130,11 +143,12 @@
 
   .hero_sub_text {
     display: block !important;
-    font-size: 2.5rem !important;
+    font-size: 1.5rem !important;
     text-align: left !important;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.3);
     padding: 1%;
+    line-height: 1.4;
+    width: 40%;
   }
 
   .tagline-container__div {
@@ -149,7 +163,7 @@
 
   .tagline-container__div p,
   .tagline-container__span {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: left !important;
   }
 
@@ -159,12 +173,23 @@
 
   .tagline__p {
     margin: 3% 0;
+    font-size: 1.75rem;
   }
 
   /* About */
 
   .about__img {
-    max-width: 60%;
+    max-width: 40%;
+  }
+
+  /* Services */
+
+  .icon__container .icon__item {
+    margin-top: 0%;
+  }
+
+  .icon__item img {
+    width: 20%;
   }
 
   /* Portfolio */
@@ -177,19 +202,15 @@
   /* Testimonials */
 
   .testimonial__item {
-    height: 40vh;
+    height: 25vh;
     margin: 2.5% 0;
   }
 
   /* Clients */
   .clients_wrapper__div {
     margin-top: 0%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
-  }
-
-  .logo__item {
-    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
   }
 
   /* Services */
@@ -201,19 +222,47 @@
     font-size: 1.75rem !important;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+  }
+
+  .icon__container p {
+    font-size: 1.5rem;
+  }
+
+  .lumen__logo img {
+    width: 45% !important;
+  }
+
+  /* Testimonials */
+  .testimonial__item-span {
+    font-size: 1.25rem;
   }
 
   /* Contact Section */
 
+  #contact-form fieldset {
+    margin: auto;
+  }
+
+  #contact-form label,
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form legend,
+  .button-wrapper {
+    margin: 1% 0%;
+  }
+
+  .form-button {
+    margin: 0%;
+  }
+
   #contact-form input {
-    height: 4rem;
-    width: 60%;
+    height: 2rem;
+    width: 40%;
   }
 
   #contact-form textarea {
-    height: 10rem;
-    width: 60%;
+    height: 5rem;
+    width: 40%;
   }
 
   /* Footer */
