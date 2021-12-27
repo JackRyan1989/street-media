@@ -176,7 +176,7 @@
 
   /* HERO SECTION */
   #hero__section {
-    height: 75vh;
+    height: 100vh;
     margin-top: 0px;
     background-image: url("../assets/images/hero_dali2_orange.jpg");
     background-size: 152%;
@@ -285,8 +285,27 @@
     margin-top: 10%;
   }
 
+  .icon__container p {
+    font-size: 1rem;
+  }
+
   .icon__item img {
     width: 35%;
+  }
+
+  .icon__item a {
+    text-decoration: none;
+    transition: all 0.25s;
+  }
+
+  .icon__item a:hover,
+  .icon__item a:focus {
+    text-decoration: underline;
+    transition: all 0.25s;
+  }
+
+  .lumen__logo img {
+    width: 60% !important;
   }
 
   /* Portfolio */
@@ -371,6 +390,7 @@
   }
 
   .testimonial__item-span {
+    font-size: 0.85rem;
     text-transform: uppercase;
   }
 
@@ -424,8 +444,12 @@
   }
 
   .logo__item {
-    width: 75%;
+    width: 100%;
     height: auto;
+  }
+
+  .gsk__logo {
+    width: 50% !important;
   }
 
   /* Contact Section */
@@ -499,7 +523,32 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+  }
+
+  .footer__link__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .footer__pink__link,
+  .footer__lumen__link {
+    width: 25%;
+    text-align: center;
+  }
+
+  .footer__pink__link img {
+    width: 50%;
+    height: auto;
+    margin: 5% 1.5%;
+  }
+
+  .footer__lumen__link img {
+    width: 70%;
+    height: auto;
+    margin: 5% 1.5%;
   }
 
   .follow {
@@ -509,6 +558,8 @@
   }
 
   .sm__link {
+    width: 25%;
     margin: 3% 1.5%;
+    text-align: center;
   }
 }
