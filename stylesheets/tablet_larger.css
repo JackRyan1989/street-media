@@ -33,6 +33,10 @@
 
   /* Hero */
 
+  #hero__section {
+    height: 95vh;
+  }
+
   .tagline-container__div p {
     margin-bottom: 6% !important;
   }
@@ -55,26 +59,40 @@
 
   /* Services */
 
-  .icon__item img {
-    height: 60%;
-    width: auto;
-  }
-
-  .icon__item p {
-    font-size: 1.5em;
-  }
-
   .icon__container__paragraph {
-    font-size: 2em;
+    font-size: 2.5rem !important;
+  }
+
+  .lumen__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   /* Testimonials */
 
   .testimonial__item {
-    margin: 5% 0px;
+    height: 20vh;
+  }
+
+  .testimonial__item-span {
+    font-size: 1.5rem;
+  }
+
+  /* Clients */
+
+  .clients_wrapper__div {
+    gap: 3rem;
   }
 
   /* Footer */
+
+  #footer svg {
+    height: 64px;
+    width: 64px;
+  }
+
+
   .follow {
     margin: 2.5% 1.5%;
   }

@@ -51,7 +51,7 @@
   }
 
   .tagline__p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   /* About */
@@ -74,11 +74,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    place-items: center;
   }
 
   .about__img {
     display: flex;
+    margin: auto;
     max-width: 100%;
     height: auto;
     aspect-ratio: 1;
@@ -92,16 +92,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    place-items: center;
   }
+  
+  .icon__container p {
+    font-size: 2rem;
+}
 
-  .icon__item img {
-    height: 50%;
-    width: auto;
-  }
-
-  .icon__container__paragraph {
-    font-size: 1.75em;
+  .printed__ink__icon {
+    height: 25% !important;
   }
 
   /* Portfolio */
@@ -116,13 +114,11 @@
   }
 
   .testimonial__item {
-    height: 25vh;
+    height: 20vh;
     padding: 1%;
-    margin: 10% 0px;
+    margin: 5% 0px 2.5% 0px;
     background-color: ghostwhite;
-    border-left: 6px solid #d6584f;
-    line-height: 1.4;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    line-height: 1.1;
   }
 
   .testimonials__prevnext button {
@@ -153,11 +149,20 @@
     height: auto;
   }
 
+  .gsk__logo {
+    width: 40%;
+  }
+
   /*  Footer */
 
   #footer {
-    height: 6vh;
+    height: 12vh;
     justify-content: flex-end;
+  }
+
+  #footer svg {
+    height: 48px;
+    width: 48px;
   }
 
   .follow {
