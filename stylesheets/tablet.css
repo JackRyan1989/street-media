@@ -34,6 +34,7 @@
 
   /* HERO SECTION */
   #hero__section {
+    height: 95vh;
     background-size: cover;
     background-position: top;
   }
