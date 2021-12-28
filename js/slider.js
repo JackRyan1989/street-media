@@ -18,12 +18,16 @@ var gotoSlideOne = document.getElementById("testimonials__pageOne"),
 // Apply slide styling on button clicks
 function showHide() {
   if (currentSlide === 1) {
+    slide1.setAttribute("tabindex", "0");
+    slide1.focus();
     slide1.classList.add("show");
     slide1.classList.remove("hide");
     slide2.classList.add("hide");
     slide2.classList.remove("show");
+    slide2.setAttribute("tabindex", "-1");
     slide3.classList.add("hide");
     slide3.classList.remove("show");
+    slide3.setAttribute("tabindex", "-1");
     gotoSlideOne.classList.add("indicated");
     gotoSlideOne.setAttribute('aria-current', 'true');
     gotoSlideTwo.classList.remove("indicated");
@@ -33,10 +37,14 @@ function showHide() {
   } else if (currentSlide === 2) {
     slide1.classList.add("hide");
     slide1.classList.remove("show");
+    slide1.setAttribute("tabindex", "-1");
     slide2.classList.add("show");
     slide2.classList.remove("hide");
+    slide2.setAttribute("tabindex", "0");
+    slide2.focus();
     slide3.classList.add("hide");
     slide3.classList.remove("show");
+    slide3.setAttribute("tabindex", "-1");
     gotoSlideOne.classList.remove("indicated");
     gotoSlideOne.setAttribute('aria-current', 'false');
     gotoSlideTwo.classList.add("indicated");
@@ -46,10 +54,14 @@ function showHide() {
   } else if (currentSlide === 3) {
     slide1.classList.add("hide");
     slide1.classList.remove("show");
+    slide1.setAttribute("tabindex", "-1");
     slide2.classList.add("hide");
     slide2.classList.remove("show");
+    slide2.setAttribute("tabindex", "-1");
     slide3.classList.add("show");
     slide3.classList.remove("hide");
+    slide3.setAttribute("tabindex", "0");
+    slide3.focus();
     gotoSlideOne.classList.remove("indicated");
     gotoSlideOne.setAttribute('aria-current', 'false');
     gotoSlideTwo.classList.remove("indicated");
