@@ -2,11 +2,11 @@
   /* Fonts */
   @font-face {
     font-family: "GothamBold";
-    src: url("../assets/fonts/gotham/Gotham-Bold.otf") format("opentype");
+    src: url("../assets/fonts/gotham/Gotham-Regular.otf") format("opentype");
   }
   @font-face {
     font-family: "GothamRegular";
-    src: url("../assets/fonts/gotham/Gotham-Medium.otf") format("opentype");
+    src: url("../assets/fonts/gotham/Gotham-Light.otf") format("opentype");
   }
   /* Variables */
   :root {
@@ -131,7 +131,7 @@
   }
 
   #navbar {
-    border-bottom: solid 5px #ff9c00;
+    border-bottom: solid 5px var(--underline);
     background-color: var(--yellow-bg);
   }
 
@@ -159,6 +159,7 @@
     width: 100%;
     height: auto;
   }
+
   .menu_button {
     background-color: transparent;
     border: solid 1px #000;
@@ -167,6 +168,14 @@
     padding: 3%;
     width: 65%;
     height: 50%;
+    transition: all 0.25s;
+  }
+
+  [data-open="true"]:hover,
+  [data-open="true"]:focus {
+    color: #fff;
+    background-color: #000;
+    transition: all 0.25s;
   }
 
   section {
@@ -298,10 +307,37 @@
     transition: all 0.25s;
   }
 
-  .icon__item a:hover,
-  .icon__item a:focus {
-    text-decoration: underline;
-    transition: all 0.25s;
+  .icon__item a p {
+    position: relative;
+    margin: 2% auto;
+    width: 80%;
+  }
+
+  .icon__item a p:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 4px;
+    content: ".";
+    color: transparent;
+    visibility: none;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: var(--underline);
+  }
+
+  .icon__item a p:before {
+    transition: all 0.5s;
+  }
+
+  .icon__item a:hover p:after,
+  .icon__item a:focus p:after {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    text-align: center;
   }
 
   .lumen__logo img {
