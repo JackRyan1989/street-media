@@ -21,7 +21,7 @@
   <body>
     <div class="wrapper">
       <!-- NAV BAR -->
-      <nav id="navbar" class="nav__compressed">
+      <nav role="navigation" id="navbar" class="nav__compressed">
         <div class="mobile">
           <img
             id="nav_icon"
@@ -61,10 +61,10 @@
           </li>
         </ul>
       </nav>
-      <main>
+      <main role="main">
         <!-- HERO IMAGE -->
-        <section id="hero__section">
-          <h1 class="hidden__h1" aria-hidden="true">Street Media</h1>
+        <section role="contentinfo" id="hero__section">
+          <h1 class="hidden__h1">Street Media</h1>
           <div class="tagline-container__div">
             <p>You envision</p>
             <p>We <span class="tagline-container__span">create</span></p>
@@ -75,7 +75,7 @@
           </div>
         </section>
         <!-- ABOUT US TEXT -->
-        <section id="about__section">
+        <section role="contentinfo" id="about__section">
           <h2 class="about__h2">About Us</h2>
           <div class="about__container">
             <div class="about__container__para">
@@ -98,7 +98,7 @@
             />
           </div>
         </section>
-        <section id="services__section">
+        <section role="contentinfo" id="services__section">
           <h2 class="services__h2">Services</h2>
           <div class="about_services__div">
             <div class="icon__container">
@@ -141,13 +141,14 @@
           </div>
         </section>
         <!-- PORTFOLIO -->
-        <section id="portfolio__section">
+        <section role="contentinfo" id="portfolio__section">
           <h2 class="portfolio__h2">Our Work</h2>
           <div class="images__wrapper">
             <div>
               <a 
                 href="./assets/images/portfolio1.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio1_square.jpg" />
               </a>
@@ -156,6 +157,7 @@
               <a 
                 href="./assets/images/portfolio13.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio13_square.jpg" />
               </a>
@@ -164,6 +166,7 @@
               <a 
                 href="./assets/images/portfolio3.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio3_square.jpg" />
               </a>
@@ -172,6 +175,7 @@
               <a 
                 href="./assets/images/portfolio4.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio4_square.jpg" />
               </a>
@@ -180,6 +184,7 @@
               <a 
                 href="./assets/images/portfolio5.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio5_square.jpg" />
               </a>
@@ -188,6 +193,7 @@
               <a 
                 href="./assets/images/portfolio11.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio11_square.jpg" />
               </a>
@@ -196,6 +202,7 @@
               <a 
                 href="./assets/images/portfolio7.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio7_square.jpg" />
               </a>
@@ -204,6 +211,7 @@
               <a 
                 href="./assets/images/portfolio16.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio16_square.jpg" />
               </a>
@@ -212,6 +220,7 @@
               <a 
                 href="./assets/images/portfolio9.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio9_square.jpg" />
               </a>
@@ -220,6 +229,7 @@
               <a 
                 href="./assets/images/portfolio10.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio10_square.jpg" />
               </a>
@@ -228,6 +238,7 @@
               <a 
                 href="./assets/images/portfolio17.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio17_square.jpg" />
               </a>
@@ -236,6 +247,7 @@
               <a 
                 href="./assets/images/portfolio12.jpg"
                 class="lightbox image__item"
+                aria-label=""
               >
                 <img src="./assets/images/portfolio12_square.jpg" />
               </a>
@@ -243,7 +255,7 @@
           </div>
         </section>
         <!-- TESTIMONIALS -->
-        <section id="testimonials__section">
+        <section role="contentinfo" id="testimonials__section">
           <h2 class="testimonials__h2">Testimonials</h2>
           <div class="testmonials_wrapper__div">
             <div id="s1" class="testimonial__item show">
@@ -308,7 +320,7 @@
         </div>
         </section>
         <!-- CLIENTS -->
-        <section id="clients__section">
+        <section role="contentinfo" id="clients__section">
           <h2 class="clients__h2">Clients</h2>
           <div class="clients_wrapper__div">
             <div class="logo__wrapper">
@@ -398,9 +410,9 @@
           </div>
         </section>
         <!-- CONTACT -->
-        <section id="contact__section">
+        <section role="contentinfo" id="contact__section">
           <h2 class="contact__h2">Contact</h2>
-          <form name="contact-form" id="contact-form">
+          <form role="form" name="contact-form" id="contact-form">
             <fieldset>
               <legend>Asterisks indicate required fields.</legend>
               <label for="bot-field" style="display: none"
@@ -484,7 +496,7 @@
           </form>
         </section>
         <!-- FOOTER -->
-        <footer id="footer">
+        <footer role="contentinfo" id="footer">
           <div class="footer__link__container">
           <a class="footer__pink__link" href="http://printed-ink.com/" target="_blank" rel="noopener noreferrer">
             <img src="./assets/logos/printed-ink.png" alt="Visit Printed Ink's website"/>
