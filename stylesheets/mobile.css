@@ -188,7 +188,7 @@
     height: 90vh;
     margin-top: 0px;
     background-image: url("../assets/images/hero_dali2_orange.jpg");
-    background-size: 152%;
+    background-size: cover;
     background-position: center;
   }
 
@@ -199,8 +199,8 @@
   .tagline-container__div {
     position: absolute;
     top: 50%;
-    left: 1%;
-    transform: translate(0%, -53%);
+    left: 5%;
+    transform: translate(0%, -50%);
     line-height: 350%;
     padding: 1%;
     border-radius: 8px;
@@ -212,6 +212,10 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+  }
+
+  .hero_sub_text {
+    text-transform: none !important;
   }
 
   .tagline-container__span {

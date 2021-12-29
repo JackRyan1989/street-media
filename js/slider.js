@@ -1,74 +1,47 @@
+//To Array:
+function toArray(arrLike) {
+  return [].slice.call(arrLike);
+}
+
 // Initial slide number
 var currentSlide = 1;
 
 // Get slides
-var slide1 = document.getElementById("s1"),
-  slide2 = document.getElementById("s2"),
-  slide3 = document.getElementById("s3");
+var slides = toArray(document.getElementsByClassName("testimonial__item"));
 
 // Get prev next buttons
 var prevButton = document.getElementById("testimonials__prevButton"),
   nextButton = document.getElementById("testimonials__nextButton");
 
 // Get slide number buttons
-var gotoSlideOne = document.getElementById("testimonials__pageOne"),
-  gotoSlideTwo = document.getElementById("testimonials__pageTwo"),
-  gotoSlideThree = document.getElementById("testimonials__pageThree");
+var gotoButtons = toArray(document.querySelectorAll(".bullets button"));
 
 // Apply slide styling on button clicks
 function showHide() {
-  if (currentSlide === 1) {
-    slide1.setAttribute("tabindex", "0");
-    slide1.focus();
-    slide1.classList.add("show");
-    slide1.classList.remove("hide");
-    slide2.classList.add("hide");
-    slide2.classList.remove("show");
-    slide2.setAttribute("tabindex", "-1");
-    slide3.classList.add("hide");
-    slide3.classList.remove("show");
-    slide3.setAttribute("tabindex", "-1");
-    gotoSlideOne.classList.add("indicated");
-    gotoSlideOne.setAttribute('aria-current', 'true');
-    gotoSlideTwo.classList.remove("indicated");
-    gotoSlideTwo.setAttribute('aria-current', 'false');
-    gotoSlideThree.classList.remove("indicated");
-    gotoSlideThree.setAttribute('aria-current', 'false');
-  } else if (currentSlide === 2) {
-    slide1.classList.add("hide");
-    slide1.classList.remove("show");
-    slide1.setAttribute("tabindex", "-1");
-    slide2.classList.add("show");
-    slide2.classList.remove("hide");
-    slide2.setAttribute("tabindex", "0");
-    slide2.focus();
-    slide3.classList.add("hide");
-    slide3.classList.remove("show");
-    slide3.setAttribute("tabindex", "-1");
-    gotoSlideOne.classList.remove("indicated");
-    gotoSlideOne.setAttribute('aria-current', 'false');
-    gotoSlideTwo.classList.add("indicated");
-    gotoSlideTwo.setAttribute('aria-current', 'true');
-    gotoSlideThree.classList.remove("indicated");
-    gotoSlideThree.setAttribute('aria-current', 'false');
-  } else if (currentSlide === 3) {
-    slide1.classList.add("hide");
-    slide1.classList.remove("show");
-    slide1.setAttribute("tabindex", "-1");
-    slide2.classList.add("hide");
-    slide2.classList.remove("show");
-    slide2.setAttribute("tabindex", "-1");
-    slide3.classList.add("show");
-    slide3.classList.remove("hide");
-    slide3.setAttribute("tabindex", "0");
-    slide3.focus();
-    gotoSlideOne.classList.remove("indicated");
-    gotoSlideOne.setAttribute('aria-current', 'false');
-    gotoSlideTwo.classList.remove("indicated");
-    gotoSlideTwo.setAttribute('aria-current', 'false');
-    gotoSlideThree.classList.add("indicated");
-    gotoSlideThree.setAttribute('aria-current', 'true');
-  }
+  slides.forEach(function (slide) {
+    if (parseInt(slide.getAttribute("id").slice(1)) === currentSlide) {
+      slide.setAttribute("tabindex", "0");
+      slide.focus();
+      slide.classList.add("show");
+      slide.classList.remove("hide");
+    } else {
+      slide.classList.add("hide");
+      slide.classList.remove("show");
+      slide.setAttribute("tabindex", "-1");
+    }
+  });
+}
+
+function highLightButtons() {
+  gotoButtons.forEach(function (button) {
+    if (currentSlide === parseInt(button.getAttribute("id").slice(-1))) {
+      button.classList.add("indicated");
+      button.setAttribute("aria-current", "true");
+    } else {
+      button.classList.remove("indicated");
+      button.setAttribute("aria-current", "false");
+    }
+  });
 }
 
 // Add listeners
@@ -81,6 +54,7 @@ prevButton.addEventListener("click", function (e) {
     currentSlide = 3;
   }
   showHide();
+  highLightButtons();
 });
 
 nextButton.addEventListener("click", function (e) {
@@ -92,19 +66,13 @@ nextButton.addEventListener("click", function (e) {
     currentSlide = 1;
   }
   showHide();
+  highLightButtons();
 });
 
-gotoSlideOne.addEventListener("click", function () {
-  currentSlide = 1;
-  showHide();
-});
-
-gotoSlideTwo.addEventListener("click", function () {
-  currentSlide = 2;
-  showHide();
-});
-
-gotoSlideThree.addEventListener("click", function () {
-  currentSlide = 3;
-  showHide();
+gotoButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    currentSlide = parseInt(button.getAttribute("id").slice(-1));
+    showHide();
+    highLightButtons();
+  });
 });

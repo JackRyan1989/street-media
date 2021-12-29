@@ -63,10 +63,6 @@
 
   /* Services */
 
-  .icon__container__paragraph {
-    font-size: 2.5rem !important;
-  }
-
   .lumen__logo {
     display: flex;
     flex-direction: column;

@@ -99,10 +99,6 @@
     grid-template-rows: auto;
   }
   
-  .icon__container p {
-    font-size: 2rem;
-}
-
   .printed__ink__icon {
     height: 25% !important;
   }
