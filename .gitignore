@@ -1,4 +1,5 @@
 *.xlsx
+*.numbers
 docs/
 .DS_Store
 /node_modules

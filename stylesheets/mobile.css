@@ -2,7 +2,7 @@
   /* Fonts */
   @font-face {
     font-family: "GothamBold";
-    src: url("../assets/fonts/gotham/Gotham-Regular.otf") format("opentype");
+    src: url("../assets/fonts/gotham/Gotham-Medium.otf") format("opentype");
   }
   @font-face {
     font-family: "GothamRegular";
