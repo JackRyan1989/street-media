@@ -2,6 +2,7 @@ const gulp = require("gulp");
 const concat = require("gulp-concat");
 const cleanCss = require('gulp-clean-css');
 const sourcemaps = require("gulp-sourcemaps");
+const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
 const inject = require('gulp-inject');
@@ -9,6 +10,7 @@ const inject = require('gulp-inject');
 function cssTask() {
   return gulp.src(["./stylesheets/reset.css", "./stylesheets/mobile.css", "./stylesheets/tablet.css", "./stylesheets/tablet_larger.css", "./stylesheets/desktop.css", "./stylesheets/parvus.css"])
   .pipe(concat('main.css'))
+  .pipe(autoprefixer())
   .pipe(cleanCss({compatibility: 'ie11'}))
   .pipe(gulp.dest("./stylesheets/"))
 }
@@ -36,4 +38,4 @@ function jsTask() {
     .pipe(gulp.dest('./'))
   }
 
-exports.build = gulp.series(gulp.parallel(cssTask, jsTask), injectStuff);
+exports.build = gulp.series(cssTask);

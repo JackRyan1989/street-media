@@ -85,6 +85,7 @@
     padding: 1%;
     width: 107%;
   }
+
   ul.compressed li a {
     position: relative;
     z-index: 999;
@@ -136,7 +137,7 @@
 
   #hero__section {
     height: 95vh;
-    background-image: url("../assets/images/dali-hero_oranged.jpg");
+    background-image: url("../assets/images/dali-hero.jpg");
     background-size: cover;
     background-position: top;
   }
@@ -237,11 +238,6 @@
   }
 
   /* Contact Section */
-
-  #contact-form fieldset {
-    margin: auto;
-  }
-
   #contact-form label,
   #contact-form input,
   #contact-form textarea,
