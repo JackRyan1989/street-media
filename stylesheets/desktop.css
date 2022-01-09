@@ -155,10 +155,10 @@
   .tagline-container__div {
     position: absolute;
     top: 50%;
-    left: 7%;
+    left: 0%;
     transform: translate(0%, -50%);
     line-height: 350%;
-    padding: 1%;
+    padding: 1% 5%;
     border-radius: 8px;
   }
 
